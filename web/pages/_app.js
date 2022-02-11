@@ -1,6 +1,7 @@
 import React from 'react'
 import BaseApp from 'next/app'
 import client from '../client'
+import '../styles/globals.css'
 import '../styles/shared.module.css'
 import '../styles/layout.css'
 import '../styles/custom-properties.css'
@@ -43,7 +44,12 @@ class App extends BaseApp {
 
   render() {
     const {Component, pageProps} = this.props
-    return <Component {...pageProps} />
+    return (
+      <>
+        <h1 className="text-red-300">Hello World</h1>
+        <Component {...pageProps} />
+      </>
+    )
   }
 }
 
