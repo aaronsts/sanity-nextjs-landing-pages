@@ -44,12 +44,7 @@ class App extends BaseApp {
 
   render() {
     const {Component, pageProps} = this.props
-    return (
-      <>
-        <h1 className="text-red-300">Hello World</h1>
-        <Component {...pageProps} />
-      </>
-    )
+    return <Component {...pageProps} />
   }
 }
 

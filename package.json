@@ -16,5 +16,8 @@
   "devDependencies": {
     "@sanity/cli": "^2.26.0",
     "lerna": "^4.0.0"
+  },
+  "dependencies": {
+    "react-icons": "^4.3.1"
   }
 }

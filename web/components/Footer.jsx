@@ -34,20 +34,20 @@ function Footer(props) {
   )
 }
 
-Footer.propTypes = {
-  navItems: PropTypes.arrayOf(
-    PropTypes.shape({
-      title: PropTypes.string.isRequired,
-      slug: PropTypes.arrayOf(PropTypes.string),
-    })
-  ),
-  text: PropTypes.arrayOf(PropTypes.object),
-  router: PropTypes.shape({
-    pathname: PropTypes.string,
-    query: PropTypes.shape({
-      slug: PropTypes.string,
-    }),
-  }),
-}
+// Footer.propTypes = {
+//   navItems: PropTypes.arrayOf(
+//     PropTypes.shape({
+//       title: PropTypes.string.isRequired,
+//       slug: PropTypes.arrayOf(PropTypes.string),
+//     })
+//   ),
+//   text: PropTypes.arrayOf(PropTypes.object),
+//   router: PropTypes.shape({
+//     pathname: PropTypes.string,
+//     query: PropTypes.shape({
+//       slug: PropTypes.string,
+//     }),
+//   }),
+// }
 
 export default withRouter(Footer)
